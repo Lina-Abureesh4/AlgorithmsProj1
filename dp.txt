@@ -1,0 +1,15 @@
+14
+Ever Crest, Starlight City
+Ever Crest, [Willow Brook,22,70], [Sun Haven,8,80], [Silver Lake,12,80]
+Willow Brook, [Mist Wood,8,50], [Ember Field,10,70]
+Sun Haven, [Mist Wood,25,50], [Ember Field,10,70]
+Silver Lake, [Mist Wood,13,50], [Ember Field,13,70]
+Mist Wood, [Star Dale,25,50], [Moon Ville,30,70], [Spring Vale,18,70], [Aurora Bay,27,60]
+Ember Field, [Star Dale,12,50], [Moon Ville,10,70], [Spring Vale,8,70], [Aurora Bay,7,60]
+Star Dale, [Crystal Brook,28,50], [Shadow Stone,13,70], [Meadow Brook,15,60]
+Moon Ville, [Crystal Brook,8,50], [Shadow Stone,10,70], [Meadow Brook,10,60]
+Spring Vale, [Crystal Brook,20,50], [Shadow Stone,10,70], [Meadow Brook,10,60]
+Aurora Bay, [Crystal Brook,15,50], [Shadow Stone,10,70], [Meadow Brook,7,60]
+Crystal Brook, [Starlight City,10,0]
+Shadow Stone, [Starlight City,10,0]
+Meadow Brook, [Starlight City,10,0]
