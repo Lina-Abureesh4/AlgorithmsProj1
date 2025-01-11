@@ -1,16 +1,16 @@
 # Discover the shortest path with Dynamic Programming 🗺️
 
+[Project Description 🧾](https://github.com/Lina-Abureesh4/AlgorithmsProj1/blob/master/First%2BProject_DP_2_2024.pdf)
+
 ## Overview
 
 This project aims to solve the **minimum cost problem** for traveling from **City 1** to **City 2** using the **Dynamic Programming** technique. The problem involves calculating the minimum travel cost from a starting city to an ending city, considering multiple stopovers along the way, each with different routes and costs for petrol and hotel accommodations.
 
 The program reads data about cities, routes, and associated costs from a file, and then computes the optimal path, minimizing the overall cost of the trip. The project also includes an optional **map of an imaginary world called Veridia**, where the cities and routes are visualized to provide a more engaging representation of the algorithm in action.
 
-[Project Description](https://github.com/Lina-Abureesh4/AlgorithmsProj1/blob/master/First%2BProject_DP_2_2024.pdf)
-
 <br>
 
-## Screenshots of the Run
+## Screenshots of the Program
 
 ### Start Screen
 ![start](https://github.com/user-attachments/assets/0ef3dc5f-0035-4b07-b1ca-df10e1889516)
