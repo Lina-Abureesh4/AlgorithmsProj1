@@ -6,6 +6,10 @@ This project aims to solve the **minimum cost problem** for traveling from **Cit
 
 The program reads data about cities, routes, and associated costs from a file, and then computes the optimal path, minimizing the overall cost of the trip. The project also includes an optional **map of an imaginary world called Veridia**, where the cities and routes are visualized to provide a more engaging representation of the algorithm in action.
 
+[Project Description](https://github.com/Lina-Abureesh4/AlgorithmsProj1/blob/master/First%2BProject_DP_2_2024.pdf)
+
+<br>
+
 ## Screenshots of the Run
 
 ### Start Screen
