@@ -45,7 +45,6 @@ public class Driver {
 			cities = new String[numberOfCities];
 			paths = new City[numberOfCities - 1];
 			String[] c = sc.nextLine().split(",");
-//			printArray(c);
 			start = c[0].trim();
 			cities[numberOfCities - 1] = end = c[1].trim();
 			int j = 0;
@@ -68,10 +67,7 @@ public class Driver {
 				j++;
 			}
 
-//			printArray(paths);
-//			printArray(cities);
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
