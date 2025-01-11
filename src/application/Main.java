@@ -136,9 +136,7 @@ public class Main extends Application {
 			cities = new String[numberOfCities];
 			paths = new City[numberOfCities - 1];
 			String[] c = sc.nextLine().split(",");
-//			printArray(c);
 			start = c[0].trim();
-//			cities[numberOfCities - 1] = end = c[1].trim();
 			end = c[1].trim();
 			int j = 0;
 			while (sc.hasNext()) {
@@ -161,11 +159,7 @@ public class Main extends Application {
 			}
 
 			cities[j] = paths[j - 1].getAccessPoint(0);
-
-//			printArray(paths);
-//			printArray(cities);
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -194,8 +188,7 @@ public class Main extends Application {
 				startFrom = j;
 		}
 
-		// fill the rest of dp table by calculating the minimum paths' costs between
-		// cities
+		// fill the rest of dp table by calculating the minimum paths' costs between cities
 		startFrom = 1;
 		int i = 0;
 		int istart = 1;
@@ -463,33 +456,10 @@ public class Main extends Application {
 
 		pane.setRight(pathsBox);
 
-//		// ComboBox
-//		cboxFrom.setItems(FXCollections.observableArrayList(cities));
-//
-//		// set on action
-//		cboxFrom.setOnAction(e -> {
-//			cboxTo.setValue(null);
-//			ArrayList<String> destinations = new ArrayList<>();
-//			if (cboxFrom.getValue() != null) {
-//				String city = cboxFrom.getValue();
-//				int cityIndex = findCityIndex(city);
-//
-//				for (int i = 0; i < cities.length; i++) {
-//					if (dtable[cityIndex][i] == Integer.MAX_VALUE || cityIndex == i)
-//						continue;
-//					else
-//						destinations.add(cities[i]);
-//				}
-//			}
-//
-//			cboxTo.setItems(FXCollections.observableArrayList(destinations));
-//		});
-
 		VBox imgBox = new VBox(20);
 		imgBox.setAlignment(Pos.CENTER);
 		imgBox.getChildren().add(imgPane);
 
-//		cboxTo.setOnAction(e -> {
 		if (start != null && end != null && dtable[findCityIndex(start)][findCityIndex(end)] != Integer.MAX_VALUE) {
 			pathsBox.getChildren().clear();
 			System.out.println(getOptimalPathCost(start, end));
@@ -550,15 +520,6 @@ public class Main extends Application {
 			lblOptimalPath2.setTextAlignment(TextAlignment.CENTER);
 			imgBox.getChildren().add(lblOptimalPath2);
 		}
-//		});
-//
-//		destBox.getChildren().addAll(lblFrom, cboxFrom, lblTo, cboxTo);
-//		destBox.setAlignment(Pos.CENTER);
-//		destBox.setPadding(new Insets(0, 0, 30, 0));
-
-		//
-
-		//
 
 		pane.setCenter(imgBox);
 
@@ -568,47 +529,6 @@ public class Main extends Application {
 		mapStage.setFullScreen(true);
 		mapStage.setScene(scene);
 
-//		RadioButton btnOptimal = new RadioButton("Get optimal path with minimum cost.");
-//		RadioButton btnAlternative = new RadioButton("Get alternative paths.        ");
-//		btnOptimal.setFont(Font.font("Times New Roman", FontWeight.NORMAL, 20));
-//		btnAlternative.setFont(Font.font("Times New Roman", FontWeight.NORMAL, 20));
-//
-//		Label lblOptPath = new Label("Please select an option: ");
-//		lblOptPath.setFont(Font.font("Times New Roman", FontWeight.BOLD, 20));
-//
-//		VBox buttonsBox = new VBox(5);
-//		buttonsBox.setAlignment(Pos.BASELINE_LEFT);
-//		buttonsBox.getChildren().addAll(lblOptPath, btnOptimal, btnAlternative);
-//		
-//		ToggleGroup group = new ToggleGroup();
-//		btnOptimal.setToggleGroup(group);
-//		btnAlternative.setToggleGroup(group);
-
-		// create checkBox
-//		CheckBox optimalCHBox = new CheckBox("Optimal path.");
-//		CheckBox alternativeCHBox = new CheckBox("Alternative paths.");
-//		optimalCHBox.setFont(Font.font("Times New Roman", FontWeight.NORMAL, 20));
-//		alternativeCHBox.setFont(Font.font("Times New Roman", FontWeight.NORMAL, 20));
-//
-//		VBox CHVBox = new VBox(5);
-//		CHVBox.setAlignment(Pos.BASELINE_LEFT);
-//		CHVBox.getChildren().addAll(optimalCHBox, alternativeCHBox);
-//		CHVBox.setPadding(new Insets(80, 80, 0, 0));
-
-//		Label costLabel = new Label("Total Path Cost: ");
-//		costLabel.setFont(Font.font("Times New Roman", FontWeight.NORMAL, 20));
-//		TextField costField = new TextField();
-//		costField.setEditable(false);
-//
-//		HBox costBox = new HBox(5);
-//		costBox.setAlignment(Pos.BASELINE_LEFT);
-//		costBox.getChildren().addAll(costLabel, costField);
-
-//		VBox rightBox = new VBox(40);
-//		leftBox.setAlignment(Pos.CENTER);
-//		rightBox.getChildren().addAll(CHVBox, costBox);
-//		rightBox.setPadding(new Insets(60, 30, 0, 0));
-
 		btnDptable.setFont(Font.font("Times New Roman", FontWeight.NORMAL, 20));
 		btnDptable.setStyle("-fx-background-color: transparent;");
 		HBox goDPBox = new HBox();
@@ -616,7 +536,6 @@ public class Main extends Application {
 		goDPBox.setAlignment(Pos.BASELINE_RIGHT);
 		goDPBox.setPadding(new Insets(0, 20, 30, 0));
 
-//		pane.setRight(CHVBox);
 		pane.setBottom(goDPBox);
 
 		return scene;
@@ -666,16 +585,6 @@ public class Main extends Application {
 
 		return data;
 	}
-
-//	private static ObservableList<Integer> buildData(String[] dataArray) {
-//		ObservableList<Integer> data = FXCollections.observableArrayList();
-//
-//		for (String datum : dataArray) {
-//			data.add(datum);
-//		}
-//
-//		return data;
-//	}
 
 	private static TableView<ObservableList<Integer>> createTableView(Integer[][] dataArray) {
 		TableView<ObservableList<Integer>> tableView = new TableView<>();
